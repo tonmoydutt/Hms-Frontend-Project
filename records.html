@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Medical Records</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="records.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Medical Records</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="patients.html">Manage Patients</a></li>
+          <li><a href="doctors.html">Doctor Scheduling</a></li>
+          <li><a href="appointments.html">Appointments</a></li>
+          <!-- <li><a href="records.html">Medical Records</a></li> -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Patient Medical Records</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Patient Name</th>
+            <th>Record Date</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="records-list">
+          <!-- Record rows will be added dynamically -->
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Hospital Management System</p>
+    </footer>
+
+    <script src="records.js"></script>
+  </body>
+</html>

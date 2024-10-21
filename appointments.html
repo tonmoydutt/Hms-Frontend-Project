@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointments Management</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="appointments.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Appointments Management</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="patients.html">Manage Patients</a></li>
+          <li><a href="doctors.html">Doctor Scheduling</a></li>
+          <!-- <li><a href="appointments.html">Appointments</a></li> -->
+          <li><a href="records.html">Medical Records</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Appointments List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Patient Name</th>
+            <th>Doctor Name</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="appointments-list">
+          <!-- Appointment rows will be added dynamically -->
+        </tbody>
+      </table>
+      <button id="add-appointment-btn">Add Appointment</button>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Hospital Management System</p>
+    </footer>
+
+    <script src="appointments.js"></script>
+  </body>
+</html>

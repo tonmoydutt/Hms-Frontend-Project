@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Scheduling</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="doctors.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Doctor Scheduling</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="patients.html">Manage Patients</a></li>
+          <!-- <li><a href="doctors.html">Doctor Scheduling</a></li> -->
+          <li><a href="appointments.html">Appointments</a></li>
+          <li><a href="records.html">Medical Records</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Doctor Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Doctor Name</th>
+            <th>Specialization</th>
+            <th>Availability</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="doctor-schedule">
+          <!-- Doctor rows will be added dynamically -->
+        </tbody>
+      </table>
+      <button id="add-doctor-btn">Add Doctor</button>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Hospital Management System</p>
+    </footer>
+
+    <script src="doctors.js"></script>
+  </body>
+</html>
