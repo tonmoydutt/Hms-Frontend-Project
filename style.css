@@ -1,21 +1,4 @@
-/* For mobile phones */
-@media (max-width: 600px) {
-  header,
-  footer {
-    padding: 10px;
-    font-size: 0.9em;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  main {
-    padding: 10px;
-  }
-}
-
+/* General reset and styling */
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +10,6 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
-  margin: 0;
 }
 
 header {
@@ -41,13 +23,16 @@ header h1 {
   margin-bottom: 20px;
 }
 
+/* Navigation styles */
 nav ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 nav ul li {
-  display: inline;
   margin: 0 15px;
 }
 
@@ -57,6 +42,7 @@ nav ul li a {
   font-size: 1.2em;
 }
 
+/* Main and content styles */
 main {
   padding: 20px;
   margin-bottom: 50px;
@@ -93,7 +79,8 @@ main {
   border-radius: 5px;
 }
 
-.overview {
+.overview,
+.testimonials {
   padding: 20px;
   text-align: center;
   background: #ffffff;
@@ -127,13 +114,6 @@ main {
   color: #4caf50;
 }
 
-.testimonials {
-  background: #ffffff;
-  padding: 20px;
-  text-align: center;
-  margin: 20px 0;
-}
-
 blockquote {
   font-style: italic;
   margin: 0;
@@ -146,4 +126,42 @@ footer {
   padding: 10px 0;
   width: 100%;
   margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  header,
+  footer {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .hero h2 {
+    font-size: 1.8em;
+  }
+
+  .hero p,
+  .cta-button {
+    font-size: 0.9em;
+  }
 }
